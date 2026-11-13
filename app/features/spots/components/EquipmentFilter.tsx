@@ -1,11 +1,14 @@
 import { Form } from "react-router";
 import { EQUIPMENT, EQUIPMENT_LABEL } from "../model/equipment";
+import { SELECTED_PARAM } from "../model/search";
 import type { SpotFilter } from "../model/spot";
 
 /** Formulaire GET : le filtre vit dans l'URL, donc il se partage et fonctionne sans JavaScript. */
-export function EquipmentFilter({ filter }: { filter: SpotFilter }) {
+export function EquipmentFilter({ filter, selectedId }: { filter: SpotFilter; selectedId: string | null }) {
   return (
     <Form method="get" className="flex flex-col gap-4 rounded-2xl border border-stone-200 p-4 dark:border-stone-800">
+      {/* L'aire sélectionnée survit au changement de filtre, tant qu'elle reste dans les résultats. */}
+      {selectedId && <input type="hidden" name={SELECTED_PARAM} value={selectedId} />}
       <fieldset className="flex flex-wrap gap-2">
         <legend className="mb-2 text-sm font-medium">Équipement nécessaire</legend>
         {EQUIPMENT.map((equipment) => (
