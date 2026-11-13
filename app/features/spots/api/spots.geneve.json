@@ -1,0 +1,1175 @@
+{
+  "source": "OpenStreetMap",
+  "fetchedAt": "2026-11-13T16:46:36Z",
+  "spots": [
+    {
+      "id": "node/11066518332",
+      "name": "Street Workout",
+      "lat": 46.2317391,
+      "lng": 6.1188427,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/11083574307",
+      "name": "Parcours Vita de Carouge",
+      "lat": 46.1802985,
+      "lng": 6.1475221,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/11991722044",
+      "name": null,
+      "lat": 46.190842,
+      "lng": 6.1226399,
+      "fitnessStation": "slackline"
+    },
+    {
+      "id": "node/12066654917",
+      "name": null,
+      "lat": 46.215258,
+      "lng": 6.1353269,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "node/12066710847",
+      "name": null,
+      "lat": 46.2138753,
+      "lng": 6.1372048,
+      "fitnessStation": "horizontal_ladder"
+    },
+    {
+      "id": "node/12072983834",
+      "name": null,
+      "lat": 46.2151944,
+      "lng": 6.1389128,
+      "fitnessStation": "sit-up"
+    },
+    {
+      "id": "node/12092584668",
+      "name": null,
+      "lat": 46.2035449,
+      "lng": 6.1135762,
+      "fitnessStation": "parallel_bars"
+    },
+    {
+      "id": "node/12092616554",
+      "name": null,
+      "lat": 46.2022208,
+      "lng": 6.1332217,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12265808141",
+      "name": null,
+      "lat": 46.2053491,
+      "lng": 6.1292365,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12270913703",
+      "name": null,
+      "lat": 46.2160624,
+      "lng": 6.1509424,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12270915834",
+      "name": null,
+      "lat": 46.2160258,
+      "lng": 6.1506962,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12569135291",
+      "name": null,
+      "lat": 46.2565021,
+      "lng": 6.1419082,
+      "fitnessStation": "sit-up"
+    },
+    {
+      "id": "node/12779919446",
+      "name": null,
+      "lat": 46.256402,
+      "lng": 6.1419129,
+      "fitnessStation": "elliptical_trainer"
+    },
+    {
+      "id": "node/12779919447",
+      "name": null,
+      "lat": 46.2564461,
+      "lng": 6.141897,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12779919448",
+      "name": null,
+      "lat": 46.256462,
+      "lng": 6.141958,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/12779919449",
+      "name": null,
+      "lat": 46.2564198,
+      "lng": 6.1419846,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13081352333",
+      "name": null,
+      "lat": 46.1906637,
+      "lng": 6.1357585,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13238525787",
+      "name": null,
+      "lat": 46.1670975,
+      "lng": 6.1211997,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13406310178",
+      "name": null,
+      "lat": 46.2327745,
+      "lng": 6.1173308,
+      "fitnessStation": "box"
+    },
+    {
+      "id": "node/13839740809",
+      "name": "Parcours sportif de Gy",
+      "lat": 46.2491261,
+      "lng": 6.2794816,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13839740810",
+      "name": "Parcours Vita d'Onex",
+      "lat": 46.187535,
+      "lng": 6.097055,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13839740811",
+      "name": "Parcours Vita de Thônex",
+      "lat": 46.204465,
+      "lng": 6.2062349,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13839740812",
+      "name": "Parcours Vita de Versoix",
+      "lat": 46.2925179,
+      "lng": 6.1371784,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13839961329",
+      "name": "Parcours Vita de Vernier",
+      "lat": 46.2099792,
+      "lng": 6.1018137,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267650",
+      "name": null,
+      "lat": 46.1800335,
+      "lng": 6.1484132,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267651",
+      "name": "Parcours Vita de Carouge fin",
+      "lat": 46.1800161,
+      "lng": 6.1484433,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267654",
+      "name": "Parcours Vita de Carouge",
+      "lat": 46.1797324,
+      "lng": 6.1498144,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267656",
+      "name": null,
+      "lat": 46.1801239,
+      "lng": 6.1517437,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267657",
+      "name": null,
+      "lat": 46.1799356,
+      "lng": 6.1507549,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267658",
+      "name": null,
+      "lat": 46.1805052,
+      "lng": 6.1511189,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267659",
+      "name": null,
+      "lat": 46.1810736,
+      "lng": 6.1509675,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948267666",
+      "name": null,
+      "lat": 46.1803364,
+      "lng": 6.1492462,
+      "fitnessStation": "exercise_bike"
+    },
+    {
+      "id": "node/13948350163",
+      "name": null,
+      "lat": 46.1816498,
+      "lng": 6.1508824,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948350164",
+      "name": null,
+      "lat": 46.1815866,
+      "lng": 6.1504012,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948350165",
+      "name": null,
+      "lat": 46.1813668,
+      "lng": 6.147859,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13948350166",
+      "name": null,
+      "lat": 46.1810543,
+      "lng": 6.146781,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13951804255",
+      "name": "Parcours Vita du Grand-Saconnex",
+      "lat": 46.2319441,
+      "lng": 6.1197771,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13951804256",
+      "name": "Parcours Vita",
+      "lat": 46.2320753,
+      "lng": 6.119485,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804257",
+      "name": null,
+      "lat": 46.2319778,
+      "lng": 6.1188784,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804258",
+      "name": null,
+      "lat": 46.2316725,
+      "lng": 6.1193253,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804259",
+      "name": null,
+      "lat": 46.2317672,
+      "lng": 6.1182988,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804260",
+      "name": null,
+      "lat": 46.2315985,
+      "lng": 6.1178164,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804261",
+      "name": null,
+      "lat": 46.233646,
+      "lng": 6.1157255,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804262",
+      "name": "Parcours Vita",
+      "lat": 46.2341219,
+      "lng": 6.1166009,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804263",
+      "name": null,
+      "lat": 46.2334026,
+      "lng": 6.1172084,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804264",
+      "name": null,
+      "lat": 46.2321963,
+      "lng": 6.1179388,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804265",
+      "name": null,
+      "lat": 46.2313529,
+      "lng": 6.1185425,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13951804271",
+      "name": null,
+      "lat": 46.2327158,
+      "lng": 6.1212564,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "node/13975156816",
+      "name": null,
+      "lat": 46.210456,
+      "lng": 6.0969312,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156817",
+      "name": null,
+      "lat": 46.2109396,
+      "lng": 6.0967183,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156818",
+      "name": null,
+      "lat": 46.2117828,
+      "lng": 6.0974235,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156819",
+      "name": null,
+      "lat": 46.2125023,
+      "lng": 6.0976229,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156820",
+      "name": null,
+      "lat": 46.2126628,
+      "lng": 6.0979463,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156821",
+      "name": null,
+      "lat": 46.2133226,
+      "lng": 6.0993929,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156822",
+      "name": null,
+      "lat": 46.2131995,
+      "lng": 6.099713,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156823",
+      "name": null,
+      "lat": 46.2121159,
+      "lng": 6.1008233,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156824",
+      "name": null,
+      "lat": 46.2114887,
+      "lng": 6.1003433,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156825",
+      "name": null,
+      "lat": 46.2107575,
+      "lng": 6.1007182,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156826",
+      "name": null,
+      "lat": 46.2102013,
+      "lng": 6.0992044,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156827",
+      "name": null,
+      "lat": 46.2100303,
+      "lng": 6.0997776,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13975156828",
+      "name": null,
+      "lat": 46.2099436,
+      "lng": 6.1010884,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13981631184",
+      "name": null,
+      "lat": 46.1875494,
+      "lng": 6.0969453,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13984053923",
+      "name": "Parcours vita de Bellevue",
+      "lat": 46.2565578,
+      "lng": 6.137999,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13984053924",
+      "name": null,
+      "lat": 46.2577939,
+      "lng": 6.1366008,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13984053925",
+      "name": null,
+      "lat": 46.2596604,
+      "lng": 6.1355141,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13984053926",
+      "name": null,
+      "lat": 46.261067,
+      "lng": 6.133953,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13984053929",
+      "name": null,
+      "lat": 46.2615697,
+      "lng": 6.1370326,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987156286",
+      "name": null,
+      "lat": 46.2040411,
+      "lng": 6.2065992,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987156297",
+      "name": null,
+      "lat": 46.2053156,
+      "lng": 6.2102012,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987156298",
+      "name": null,
+      "lat": 46.2087754,
+      "lng": 6.2138991,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987156299",
+      "name": "Parcours Vita",
+      "lat": 46.2087596,
+      "lng": 6.2141874,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987156300",
+      "name": null,
+      "lat": 46.2097835,
+      "lng": 6.2150176,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252901",
+      "name": "Parcours Vita",
+      "lat": 46.2102032,
+      "lng": 6.2114888,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252902",
+      "name": null,
+      "lat": 46.2091572,
+      "lng": 6.211865,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252903",
+      "name": null,
+      "lat": 46.2039024,
+      "lng": 6.2087402,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252904",
+      "name": null,
+      "lat": 46.2052454,
+      "lng": 6.2109694,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252905",
+      "name": null,
+      "lat": 46.2060591,
+      "lng": 6.2131752,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252906",
+      "name": "Parcours Vita",
+      "lat": 46.2071869,
+      "lng": 6.2144396,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252908",
+      "name": null,
+      "lat": 46.2112654,
+      "lng": 6.213221,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252911",
+      "name": null,
+      "lat": 46.2073762,
+      "lng": 6.2136165,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252912",
+      "name": null,
+      "lat": 46.2065398,
+      "lng": 6.2124056,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13987252913",
+      "name": null,
+      "lat": 46.2060958,
+      "lng": 6.2112025,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13990434326",
+      "name": null,
+      "lat": 46.2254287,
+      "lng": 6.1483928,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13990434327",
+      "name": null,
+      "lat": 46.2253602,
+      "lng": 6.1484005,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13990434328",
+      "name": "Parcours Vita OMC",
+      "lat": 46.225254,
+      "lng": 6.1483529,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13990434329",
+      "name": null,
+      "lat": 46.2253108,
+      "lng": 6.1483721,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/13991990885",
+      "name": null,
+      "lat": 46.209964,
+      "lng": 6.1017996,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/14054965779",
+      "name": "Proxisport",
+      "lat": 46.2086496,
+      "lng": 6.1176439,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/14226550110",
+      "name": null,
+      "lat": 46.2042512,
+      "lng": 6.1871403,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/4060121997",
+      "name": null,
+      "lat": 46.2157416,
+      "lng": 6.1362914,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/4060122046",
+      "name": null,
+      "lat": 46.2156524,
+      "lng": 6.1365665,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/6741901066",
+      "name": null,
+      "lat": 46.1794647,
+      "lng": 6.1220018,
+      "fitnessStation": "sit-up"
+    },
+    {
+      "id": "node/6790957718",
+      "name": "Parcours Vita",
+      "lat": 46.2577996,
+      "lng": 6.136478,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/6873411685",
+      "name": "1",
+      "lat": 46.2935572,
+      "lng": 6.1330898,
+      "fitnessStation": "sign"
+    },
+    {
+      "id": "node/6873411686",
+      "name": null,
+      "lat": 46.2949534,
+      "lng": 6.1327382,
+      "fitnessStation": "sign"
+    },
+    {
+      "id": "node/6873411687",
+      "name": null,
+      "lat": 46.295666,
+      "lng": 6.132293,
+      "fitnessStation": "sign"
+    },
+    {
+      "id": "node/6873411688",
+      "name": null,
+      "lat": 46.2967626,
+      "lng": 6.1298441,
+      "fitnessStation": "sign"
+    },
+    {
+      "id": "node/7873143974",
+      "name": null,
+      "lat": 46.2099897,
+      "lng": 6.1554731,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/7873143975",
+      "name": null,
+      "lat": 46.2100055,
+      "lng": 6.1555013,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/7873143976",
+      "name": null,
+      "lat": 46.2099688,
+      "lng": 6.1554926,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/8594693376",
+      "name": null,
+      "lat": 46.196725,
+      "lng": 6.1337651,
+      "fitnessStation": "push-up"
+    },
+    {
+      "id": "node/8594723563",
+      "name": null,
+      "lat": 46.196812,
+      "lng": 6.1336988,
+      "fitnessStation": "Combination_of_Push_and_Pull_Chair"
+    },
+    {
+      "id": "node/8594753440",
+      "name": null,
+      "lat": 46.1967454,
+      "lng": 6.1338201,
+      "fitnessStation": "parallel_bars"
+    },
+    {
+      "id": "node/8594768958",
+      "name": null,
+      "lat": 46.2100705,
+      "lng": 6.155071,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "node/9135742988",
+      "name": null,
+      "lat": 46.2325629,
+      "lng": 6.1166143,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "node/9135743637",
+      "name": null,
+      "lat": 46.2322186,
+      "lng": 6.120164,
+      "fitnessStation": "rings"
+    },
+    {
+      "id": "node/9164260217",
+      "name": null,
+      "lat": 46.1905978,
+      "lng": 6.1355231,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/9164260317",
+      "name": null,
+      "lat": 46.1807127,
+      "lng": 6.1512225,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/9164266317",
+      "name": null,
+      "lat": 46.1802656,
+      "lng": 6.1506702,
+      "fitnessStation": null
+    },
+    {
+      "id": "node/9164266417",
+      "name": null,
+      "lat": 46.1809843,
+      "lng": 6.1506407,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1010261989",
+      "name": null,
+      "lat": 46.274512,
+      "lng": 6.1647833,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1047189212",
+      "name": null,
+      "lat": 46.1941066,
+      "lng": 6.1585013,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1092212283",
+      "name": null,
+      "lat": 46.2180443,
+      "lng": 6.1276734,
+      "fitnessStation": "fitness_station"
+    },
+    {
+      "id": "way/1212479578",
+      "name": null,
+      "lat": 46.2963084,
+      "lng": 6.1533641,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1238712402",
+      "name": null,
+      "lat": 46.2302121,
+      "lng": 6.121595,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1280141425",
+      "name": null,
+      "lat": 46.1450619,
+      "lng": 6.007468,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "way/1280141426",
+      "name": null,
+      "lat": 46.1448187,
+      "lng": 6.0417969,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "way/1305646779",
+      "name": null,
+      "lat": 46.2025073,
+      "lng": 6.1329085,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1348338188",
+      "name": null,
+      "lat": 46.1633674,
+      "lng": 6.1445786,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1379753282",
+      "name": "Street Workout",
+      "lat": 46.1801675,
+      "lng": 6.1490139,
+      "fitnessStation": "yes"
+    },
+    {
+      "id": "way/1380444920",
+      "name": null,
+      "lat": 46.2564733,
+      "lng": 6.1416041,
+      "fitnessStation": "horizontal_bar"
+    },
+    {
+      "id": "way/1395779560",
+      "name": null,
+      "lat": 46.1785396,
+      "lng": 6.0026522,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1448150775",
+      "name": null,
+      "lat": 46.1738861,
+      "lng": 6.122286,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1536467414",
+      "name": "Workout",
+      "lat": 46.2123043,
+      "lng": 6.1180948,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/1545591626",
+      "name": "Proxisport",
+      "lat": 46.2182303,
+      "lng": 6.1399276,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000434",
+      "name": null,
+      "lat": 46.2988772,
+      "lng": 6.1339493,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000435",
+      "name": null,
+      "lat": 46.2950555,
+      "lng": 6.1355614,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000436",
+      "name": "Parcours Vita 2",
+      "lat": 46.2949464,
+      "lng": 6.1327577,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000437",
+      "name": null,
+      "lat": 46.2964176,
+      "lng": 6.1344981,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000438",
+      "name": "Parcours Vita 5",
+      "lat": 46.296719,
+      "lng": 6.1298777,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000439",
+      "name": null,
+      "lat": 46.2984061,
+      "lng": 6.1308282,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000440",
+      "name": "Parcours Vita 3",
+      "lat": 46.2956418,
+      "lng": 6.132339,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000441",
+      "name": null,
+      "lat": 46.2981302,
+      "lng": 6.1335352,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000442",
+      "name": "Parcours Vita 4",
+      "lat": 46.2964218,
+      "lng": 6.1311716,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000443",
+      "name": null,
+      "lat": 46.299487,
+      "lng": 6.1315787,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000444",
+      "name": null,
+      "lat": 46.3005668,
+      "lng": 6.132262,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000445",
+      "name": null,
+      "lat": 46.2998081,
+      "lng": 6.1332833,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000446",
+      "name": null,
+      "lat": 46.2973246,
+      "lng": 6.1345605,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161000447",
+      "name": null,
+      "lat": 46.2960504,
+      "lng": 6.1359114,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536312",
+      "name": null,
+      "lat": 46.2615832,
+      "lng": 6.1335941,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536317",
+      "name": null,
+      "lat": 46.2620848,
+      "lng": 6.1361162,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536321",
+      "name": null,
+      "lat": 46.2593337,
+      "lng": 6.1395323,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536322",
+      "name": null,
+      "lat": 46.2607726,
+      "lng": 6.1354654,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536323",
+      "name": null,
+      "lat": 46.259013,
+      "lng": 6.1355336,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536325",
+      "name": null,
+      "lat": 46.2630563,
+      "lng": 6.1351816,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536326",
+      "name": null,
+      "lat": 46.2628929,
+      "lng": 6.13385,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536327",
+      "name": null,
+      "lat": 46.258596,
+      "lng": 6.1377966,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536329",
+      "name": null,
+      "lat": 46.2590589,
+      "lng": 6.1388444,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/161536330",
+      "name": null,
+      "lat": 46.2630099,
+      "lng": 6.1342378,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031555",
+      "name": null,
+      "lat": 46.1894474,
+      "lng": 6.0954155,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031559",
+      "name": null,
+      "lat": 46.1895971,
+      "lng": 6.0977001,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031561",
+      "name": null,
+      "lat": 46.1896754,
+      "lng": 6.0944198,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031562",
+      "name": null,
+      "lat": 46.1883416,
+      "lng": 6.0968963,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031564",
+      "name": null,
+      "lat": 46.1893094,
+      "lng": 6.0941696,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031565",
+      "name": null,
+      "lat": 46.1892491,
+      "lng": 6.0952294,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031566",
+      "name": null,
+      "lat": 46.1883756,
+      "lng": 6.0979545,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165031568",
+      "name": null,
+      "lat": 46.189213,
+      "lng": 6.0972795,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/165266567",
+      "name": null,
+      "lat": 46.189487,
+      "lng": 6.0965837,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/425981145",
+      "name": null,
+      "lat": 46.2099319,
+      "lng": 6.1317373,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/631600472",
+      "name": "Espace urbain de musculation",
+      "lat": 46.1796679,
+      "lng": 6.1585953,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/733906691",
+      "name": "Parcours Vita 1",
+      "lat": 46.2935599,
+      "lng": 6.1331096,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/83131616",
+      "name": "Espace urbain de musculation et de rencontres",
+      "lat": 46.2323969,
+      "lng": 6.0760841,
+      "fitnessStation": null
+    },
+    {
+      "id": "way/877864051",
+      "name": null,
+      "lat": 46.1734759,
+      "lng": 6.1015441,
+      "fitnessStation": "streetworkout"
+    },
+    {
+      "id": "way/925356116",
+      "name": null,
+      "lat": 46.1967725,
+      "lng": 6.1337519,
+      "fitnessStation": "fitness_station"
+    },
+    {
+      "id": "way/925357480",
+      "name": null,
+      "lat": 46.2100602,
+      "lng": 6.1550929,
+      "fitnessStation": "fitness_station"
+    },
+    {
+      "id": "way/925357884",
+      "name": null,
+      "lat": 46.2164197,
+      "lng": 6.1509315,
+      "fitnessStation": "fitness_station"
+    },
+    {
+      "id": "way/986478640",
+      "name": null,
+      "lat": 46.2440572,
+      "lng": 6.2198111,
+      "fitnessStation": null
+    }
+  ]
+}
