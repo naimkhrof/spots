@@ -112,9 +112,9 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
             source: SPOTS,
             filter: ["!", ["has", "point_count"]],
             paint: {
-              "circle-color": ["case", ["get", "known"], "#4d7c0f", "#ffffff"],
+              "circle-color": ["case", ["get", "known"], "#4d7c0f", dark ? "#1c1917" : "#ffffff"],
               "circle-radius": ["case", ["get", "known"], 7, 5],
-              "circle-stroke-color": ["case", ["get", "known"], "#ffffff", "#57534e"],
+              "circle-stroke-color": ["case", ["get", "known"], "#ffffff", dark ? "#e7e5e4" : "#57534e"],
               "circle-stroke-width": 2,
             },
           });
@@ -213,7 +213,10 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
     // `data-map` : la page s'en sert pour passer en deux colonnes seulement quand la carte existe.
     <section aria-label="Carte des aires" data-map="on" className={`flex flex-col gap-2 bg-white noscript:hidden dark:bg-gray-950 ${className}`}>
       <div className="relative min-h-0 flex-1 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
-        <div ref={containerRef} className="absolute inset-0" />
+        {/* Deux éléments : la feuille de style de Mapbox impose `position: relative` à son conteneur, ce qui annulerait `absolute`. */}
+        <div className="absolute inset-0">
+          <div ref={containerRef} className="size-full" />
+        </div>
         {status === "loading" && <p className="absolute inset-0 grid place-items-center text-sm text-stone-600 dark:text-stone-400">Chargement de la carte…</p>}
       </div>
       <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-600 dark:text-stone-400" aria-label="Légende">
@@ -222,7 +225,7 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
           Équipement renseigné
         </li>
         <li className="flex items-center gap-1.5">
-          <span aria-hidden className="size-2.5 rounded-full border-2 border-stone-600 bg-white" />
+          <span aria-hidden className="size-2.5 rounded-full border-2 border-stone-600 bg-white dark:border-stone-200 dark:bg-stone-900" />
           Équipement non renseigné
         </li>
         <li className="flex items-center gap-1.5">
