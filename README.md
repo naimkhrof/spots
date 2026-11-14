@@ -9,6 +9,8 @@ Trouver une aire de callisthénie à Genève selon l'équipement disponible. Pro
 - Liste des 167 aires de fitness du canton de Genève, filtrées par équipement. Le filtre vit dans l'URL : il se partage et fonctionne sans JavaScript.
 - Carte Mapbox des mêmes aires, regroupées à faible zoom ; disque plein pour un équipement renseigné, anneau creux sinon. L'aire sélectionnée vit dans l'URL (`?spot=…`) : cliquer un point la met en avant dans la liste, et inversement.
 - La carte est un complément : sans jeton, sans WebGL ou sans JavaScript, la page affiche la liste seule.
+- Sur grand écran, carte sur toute la hauteur et panneau défilant ; sur mobile, carte collée en haut de la liste. Thèmes clair et sombre.
+- Les filtres s'appliquent dès le clic (le bouton « Filtrer » ne reste que sans JavaScript). « Autour de moi » trie les aires par distance ; la position reste dans le navigateur, jamais dans l'URL ni sur le serveur.
 - Détection de chevauchement de créneaux, écrite et testée, pas encore affichée.
 - À venir : séance composée selon l'équipement du spot, planification.
 

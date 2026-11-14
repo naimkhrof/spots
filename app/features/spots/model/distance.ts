@@ -17,3 +17,9 @@ export function distanceInMeters(from: Coordinates, to: Coordinates): number {
 export function sortByDistance<T extends Coordinates>(items: T[], origin: Coordinates): T[] {
   return [...items].sort((a, b) => distanceInMeters(origin, a) - distanceInMeters(origin, b));
 }
+
+/** « 850 m » sous le kilomètre (arrondi à 10 m), « 2,3 km » au-delà. */
+export function formatDistance(meters: number): string {
+  if (meters < 995) return `${Math.round(meters / 10) * 10} m`;
+  return `${(meters / 1000).toLocaleString("fr-CH", { maximumFractionDigits: 1 })} km`;
+}

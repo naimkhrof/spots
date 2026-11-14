@@ -19,6 +19,8 @@ interface SpotMapProps {
   onSelect: (id: string) => void;
   /** Dimensions et position, décidées par la page. */
   className?: string;
+  /** Placement du message affiché quand la carte est absente. */
+  fallbackClassName?: string;
 }
 
 /**
@@ -26,7 +28,7 @@ interface SpotMapProps {
  * et n'est chargé que dans le navigateur, par un `import()` dans un effet (voir ADR 0002).
  * La carte complète la liste, elle ne la remplace pas : sans jeton ou sans WebGL, un message suffit.
  */
-export function SpotMap({ token, spots, selected, onSelect, className = "" }: SpotMapProps) {
+export function SpotMap({ token, spots, selected, onSelect, className = "", fallbackClassName = "" }: SpotMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapboxMap | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "failed">("loading");
@@ -91,10 +93,10 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
             source: SPOTS,
             filter: ["has", "point_count"],
             paint: {
-              "circle-color": "#292524",
-              "circle-radius": ["step", ["get", "point_count"], 15, 10, 19, 50, 24],
-              "circle-stroke-color": "#ffffff",
-              "circle-stroke-width": 2,
+              "circle-color": "#a3e635",
+              "circle-radius": ["step", ["get", "point_count"], 16, 10, 20, 50, 26],
+              "circle-stroke-color": dark ? "rgba(163, 230, 53, 0.25)" : "rgba(77, 124, 15, 0.25)",
+              "circle-stroke-width": 6,
             },
           });
           created.addLayer({
@@ -102,8 +104,8 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
             type: "symbol",
             source: SPOTS,
             filter: ["has", "point_count"],
-            layout: { "text-field": ["get", "point_count_abbreviated"], "text-size": 12 },
-            paint: { "text-color": "#ffffff" },
+            layout: { "text-field": ["get", "point_count_abbreviated"], "text-size": 13, "text-font": ["DIN Pro Bold", "Arial Unicode MS Bold"] },
+            paint: { "text-color": "#1a2e05" },
           });
           // Équipement connu : disque plein. Non renseigné : anneau creux. La forme porte l'information, pas seulement la couleur.
           created.addLayer({
@@ -112,9 +114,9 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
             source: SPOTS,
             filter: ["!", ["has", "point_count"]],
             paint: {
-              "circle-color": ["case", ["get", "known"], "#4d7c0f", dark ? "#1c1917" : "#ffffff"],
+              "circle-color": ["case", ["get", "known"], "#84cc16", dark ? "#1c1917" : "#ffffff"],
               "circle-radius": ["case", ["get", "known"], 7, 5],
-              "circle-stroke-color": ["case", ["get", "known"], "#ffffff", dark ? "#e7e5e4" : "#57534e"],
+              "circle-stroke-color": ["case", ["get", "known"], dark ? "#1a2e05" : "#ffffff", dark ? "#a8a29e" : "#57534e"],
               "circle-stroke-width": 2,
             },
           });
@@ -203,7 +205,7 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
 
   if (!token || status === "failed") {
     return (
-      <p className="rounded-2xl border border-dashed border-stone-300 p-4 text-sm text-stone-600 dark:border-stone-700 dark:text-stone-400">
+      <p className={`rounded-2xl border border-dashed border-stone-300 p-4 text-sm text-stone-600 dark:border-stone-700 dark:text-stone-400 ${fallbackClassName}`}>
         {token ? "La carte n’a pas pu s’afficher." : "La carte n’est pas configurée."} La liste ci-dessous contient toutes les aires.
       </p>
     );
@@ -211,28 +213,32 @@ export function SpotMap({ token, spots, selected, onSelect, className = "" }: Sp
 
   return (
     // `data-map` : la page s'en sert pour passer en deux colonnes seulement quand la carte existe.
-    <section aria-label="Carte des aires" data-map="on" className={`flex flex-col gap-2 bg-white noscript:hidden dark:bg-gray-950 ${className}`}>
-      <div className="relative min-h-0 flex-1 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
+    <section aria-label="Carte des aires" data-map="on" className={`relative noscript:hidden ${className}`}>
+      <div className="relative size-full overflow-hidden rounded-3xl bg-stone-200 shadow-lg ring-1 ring-stone-900/10 lg:rounded-none lg:shadow-none lg:ring-0 dark:bg-stone-900 dark:ring-white/10">
         {/* Deux éléments : la feuille de style de Mapbox impose `position: relative` à son conteneur, ce qui annulerait `absolute`. */}
         <div className="absolute inset-0">
           <div ref={containerRef} className="size-full" />
         </div>
-        {status === "loading" && <p className="absolute inset-0 grid place-items-center text-sm text-stone-600 dark:text-stone-400">Chargement de la carte…</p>}
+        {status === "loading" && (
+          <p className="absolute inset-0 grid place-items-center text-sm text-stone-600 dark:text-stone-400">
+            <span className="animate-pulse">Chargement de la carte…</span>
+          </p>
+        )}
+        <ul aria-label="Légende" className="absolute top-3 left-3 flex flex-col gap-1.5 rounded-2xl bg-white/85 px-3 py-2.5 text-xs font-medium text-stone-700 shadow-sm ring-1 ring-stone-900/10 backdrop-blur max-lg:hidden dark:bg-stone-950/80 dark:text-stone-300 dark:ring-white/10">
+          <li className="flex items-center gap-2">
+            <span aria-hidden className="size-3 rounded-full bg-lime-500 ring-2 ring-white dark:ring-lime-950" />
+            Équipement renseigné
+          </li>
+          <li className="flex items-center gap-2">
+            <span aria-hidden className="size-3 rounded-full border-2 border-stone-600 bg-white dark:border-stone-400 dark:bg-stone-900" />
+            Non renseigné
+          </li>
+          <li className="flex items-center gap-2">
+            <span aria-hidden className="grid size-3 place-items-center rounded-full bg-lime-400 ring-2 ring-lime-400/30" />
+            Plusieurs aires proches
+          </li>
+        </ul>
       </div>
-      <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-600 dark:text-stone-400" aria-label="Légende">
-        <li className="flex items-center gap-1.5">
-          <span aria-hidden className="size-3 rounded-full bg-lime-700 ring-2 ring-white" />
-          Équipement renseigné
-        </li>
-        <li className="flex items-center gap-1.5">
-          <span aria-hidden className="size-2.5 rounded-full border-2 border-stone-600 bg-white dark:border-stone-200 dark:bg-stone-900" />
-          Équipement non renseigné
-        </li>
-        <li className="flex items-center gap-1.5">
-          <span aria-hidden className="grid size-4 place-items-center rounded-full bg-stone-800 text-[9px] font-medium text-white">3</span>
-          Plusieurs aires proches
-        </li>
-      </ul>
     </section>
   );
 }

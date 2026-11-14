@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { distanceInMeters, sortByDistance } from "./distance";
+import { distanceInMeters, formatDistance, sortByDistance } from "./distance";
 import { parseOsmEquipment } from "./equipment";
 import { filterSpots, type Spot } from "./spot";
 
@@ -53,5 +53,14 @@ describe("filterFromSearchParams", () => {
     const { filterFromSearchParams } = await import("./search");
     const filter = filterFromSearchParams(new URLSearchParams("equipment=rings&equipment=rings&equipment=jacuzzi&unknown=0"));
     expect(filter).toEqual({ equipment: ["rings"], includeUnknown: false });
+  });
+});
+
+describe("formatDistance", () => {
+  it("donne des mètres arrondis sous le kilomètre, des kilomètres au-delà", () => {
+    expect(formatDistance(847)).toBe("850 m");
+    expect(formatDistance(4)).toBe("0 m");
+    expect(formatDistance(999)).toMatch(/^1 km$/);
+    expect(formatDistance(2340)).toMatch(/^2[.,]3 km$/);
   });
 });
