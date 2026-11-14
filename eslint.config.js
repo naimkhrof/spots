@@ -5,7 +5,7 @@ import tseslint from "typescript-eslint";
 const forbid = (patterns, message) => ({ "no-restricted-imports": ["error", { patterns: [{ group: patterns, message }] }] });
 
 export default tseslint.config(
-  { ignores: ["build", ".react-router", "node_modules"] },
+  { ignores: ["build", ".react-router", ".vercel", "node_modules"] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   { files: ["app/shared/**"], rules: forbid(["~/features/*", "~/routes/*"], "shared ne dépend ni des fonctionnalités ni des routes.") },

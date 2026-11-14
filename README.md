@@ -2,6 +2,8 @@
 
 Trouver une aire de callisthénie à Genève selon l'équipement disponible. Projet personnel, commencé en novembre 2026.
 
+**En ligne : <https://spots-lime.vercel.app>**
+
 ## État
 
 - Liste des 167 aires de fitness du canton de Genève, filtrées par équipement. Le filtre vit dans l'URL : il se partage et fonctionne sans JavaScript.
@@ -43,6 +45,10 @@ pnpm import:osm   # rafraîchit les données depuis OpenStreetMap
 ## Carte
 
 La carte demande un jeton public Mapbox dans `VITE_MAPBOX_TOKEN` (fichier `.env`, ignoré par git). Sans jeton, l'app fonctionne et affiche la liste seule. `mapbox-gl` n'est chargé que dans le navigateur, après le rendu serveur.
+
+## Déploiement
+
+Vercel, sans configuration ni dépendance : le build React Router est reconnu tel quel. Le preset `@vercel/react-router` est recommandé par Vercel mais sa version 1.3.7 exige React Router 7 ; il n'est pas utilisé. `VITE_MAPBOX_TOKEN` est figé au build.
 
 ## Données
 

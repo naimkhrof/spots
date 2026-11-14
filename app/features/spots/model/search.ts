@@ -4,7 +4,8 @@ import type { SpotFilter } from "./spot";
 /** Lit le filtre dans l'URL. Les valeurs inconnues sont ignorées : un lien abîmé ne casse pas la page. */
 export function filterFromSearchParams(params: URLSearchParams): SpotFilter {
   const equipment = params.getAll("equipment").filter((value): value is Equipment => (EQUIPMENT as readonly string[]).includes(value));
-  return { equipment: [...new Set(equipment)], includeUnknown: params.get("unknown") !== "0" };
+  // Le formulaire envoie « unknown=0 » (champ caché) puis « unknown=1 » si la case est cochée : la dernière valeur décide.
+  return { equipment: [...new Set(equipment)], includeUnknown: params.getAll("unknown").at(-1) !== "0" };
 }
 
 /** Paramètre d'URL qui porte l'aire sélectionnée. */

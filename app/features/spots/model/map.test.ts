@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { boundsOf, spotsToGeoJson } from "./map";
-import { onlySelectionChanged, selectedSpotFromSearchParams, withSelectedSpot } from "./search";
+import { filterFromSearchParams, onlySelectionChanged, selectedSpotFromSearchParams, withSelectedSpot } from "./search";
 import type { Spot } from "./spot";
 
 const spot = (id: string, equipment: Spot["equipment"], lat = 46.2, lng = 6.14): Spot => ({ id, name: null, lat, lng, equipment });
@@ -56,5 +56,13 @@ describe("sélection dans l'URL", () => {
     expect(onlySelectionChanged(url("?equipment=rings"), url("?equipment=rings&spot=node/2"))).toBe(true);
     expect(onlySelectionChanged(url("?spot=node/1"), url("?spot=node/2"))).toBe(true);
     expect(onlySelectionChanged(url("?equipment=rings&spot=node/2"), url("?spot=node/2"))).toBe(false);
+  });
+});
+
+describe("filterFromSearchParams", () => {
+  it("lit la case « non renseignés » telle que le formulaire l'envoie", () => {
+    expect(filterFromSearchParams(new URLSearchParams("unknown=0&unknown=1")).includeUnknown).toBe(true);
+    expect(filterFromSearchParams(new URLSearchParams("unknown=0")).includeUnknown).toBe(false);
+    expect(filterFromSearchParams(new URLSearchParams("")).includeUnknown).toBe(true);
   });
 });
